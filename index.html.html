@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camisa+</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+    .banner {
+      background: url('https://img.freepik.com/fotos-gratis/camisetas-em-varal_23-2148870975.jpg') center/cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px #000;
+    }
+    .container {
+      width: 90%;
+      margin: auto;
+      padding: 30px 0;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .produto {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .produto img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #ff6600;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #e05500;
+    }
+    .custom {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .custom input, .custom textarea {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Camisa+</h1>
+    <nav>
+      <a href="#marketplace">Marketplace</a>
+      <a href="#personalizar">Personalizar</a>
+      <a href="#login">Login</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    Sua camisa, sua identidade 👕
+  </section>
+
+  <div class="container" id="marketplace">
+    <h2>Marketplace - Camisetas prontas</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="https://kakashi.jpeg" alt="Camiseta 1">
+        <h3>Camiseta Básica</h3>
+        <p>R$ 49,90</p>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+      <div class="produto">
+        <img src="https://img.freepik.com/fotos-gratis/homem-com-camiseta-amarela_125540-1134.jpg" alt="Camiseta 2">
+        <h3>Camiseta Estilizada</h3>
+        <p>R$ 69,90</p>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+      <div class="produto">
+        <img src="https://img.freepik.com/fotos-gratis/camiseta-preta-isolada_125540-1155.jpg" alt="Camiseta 3">
+        <h3>Camiseta Premium</h3>
+        <p>R$ 89,90</p>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="personalizar">
+    <h2>Crie sua própria camiseta</h2>
+    <div class="custom">
+      <form>
+        <input type="text" placeholder="Digite uma frase para estampar">
+        <textarea placeholder="Descrição da sua ideia"></textarea>
+        <input type="file" accept="image/*">
+        <a href="#" class="btn">Enviar Pedido</a>
+      </form>
+    </div>
+  </div>
+
+  <div class="container" id="login">
+    <h2>Login / Cadastro</h2>
+    <div class="custom">
+      <form>
+        <input type="email" placeholder="E-mail" required>
+        <input type="password" placeholder="Senha" required>
+        <a href="#" class="btn">Entrar</a>
+        <p>Não tem conta? <a href="#">Criar conta</a></p>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 CamisART - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
